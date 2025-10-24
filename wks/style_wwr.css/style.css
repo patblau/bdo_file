@@ -1,21 +1,39 @@
 /* Define custom color palette */
-:root {
-    --body-background-color: #ffffff; /* white */
-    --header-color: #4B3832; /* dark brown for headlines on a colored background */
-    --nav-background-color: #6E6658; /* muted brown */
-    --nav-a-hover-color: #A68A64; /* hover color for nav links */
-    --text-on-white: #333333; /* dark gray for text on white */
-    --text-on-color: #F5E6CC; /* beige for text on colored backgrounds */
-    --background-color: #D1B38A; /* background section color */
-    --msg-color: #F5E6CC; /* light cream for message box */
-    --footer-background-color: #4B3832; /* dark brown for footer */
-    --footer-color: #FAF3E0; /* light text for footer */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Patrick+Hand&display=swap');
+
+:root{
+  --primary: #396E94;   /* deep steel-blue  - headline-color-on-white */
+ --paper:#FFFFFF;        /* white - headline -on background color */
+ --ink:#050300;       /* near black – paragraph on white color background*/ 
+
+--secondary:#0F9ED5; /* river blue */
+  --accent1:#A43312;   /* rust red */
+  --accent2:#3C7D22;   /* forest green */
+  --accent3:#E3642A;   /* orange */
+  --accent4:#49A443;   /* bright green */
+  
+  
+  --sand:#EFA765;      /* warm sand */
+  --teal:#63A7A9;      /* soft teal */
 }
+
+:root{
+  --headline-color-on-white:#145169;
+  --headline-color-on-color:#FFFFFF;
+  --paragraph-color-on-white:#145169;
+  --paragraph-color-on-color:#FFFFFF;
+  --paragraph-background-color:#145169;
+  --nav-link-color:#145169;
+  --nav-background-color:#E3642A;
+  --nav-hover-link-color:#63A7A9;
+  --nav-hover-background-color:#EFA765;
+}
+
 
 /* Base styles */
 body {
-    background-color: var(#fcfbfb);
-    font-family: Segoe Print, Aptos (Body), sans-serif;
+    background-color: var(--body-background-color);
+    font-family: "Segoe Print", "Aptos (Body)", sans-serif;
     color: var(--text-on-white);
     margin: 0;
     padding: 0;
@@ -175,5 +193,3 @@ footer p {
 main section img {
     box-sizing: border-box; /* Ensures Borders Don't Affect Image Size */
 }
-
-</style>
